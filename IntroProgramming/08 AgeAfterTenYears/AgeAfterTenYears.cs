@@ -9,10 +9,10 @@ class AgeAfterTenYears
         Console.WriteLine("Enter your birthyear: ");
         int year = int.Parse(Console.ReadLine());
         
-        Console.WriteLine("Enter your birthmonth: ");
+        Console.WriteLine("Enter your birth month: ");
         int month = int.Parse(Console.ReadLine());
         
-        Console.WriteLine("Enter your birthday: ");
+        Console.WriteLine("Enter your birth day: ");
         int day = int.Parse(Console.ReadLine());
 
         DateTime yourBirthday = new DateTime(year, month, day);
