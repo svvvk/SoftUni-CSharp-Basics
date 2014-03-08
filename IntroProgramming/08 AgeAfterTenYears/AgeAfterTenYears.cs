@@ -15,12 +15,12 @@ class AgeAfterTenYears
         Console.WriteLine("Enter your birth day: ");
         int day = int.Parse(Console.ReadLine());
 
-        DateTime yourBirthday = new DateTime(year, month, day);
+        DateTime yourBirthdate = new DateTime(year, month, day);
         DateTime today =  DateTime.Today;
         
-        if (today.Month >= yourBirthday.Month && today.Day >= yourBirthday.Day)
+        if (today.Month >= yourBirthdate.Month && today.Day >= yourBirthdate.Day)
         {
-            byte age = (byte)(today.Year - yourBirthday.Year);
+            byte age = (byte)(today.Year - yourBirthdate.Year);
             byte newAge = (byte)(age + 10);
             Console.WriteLine("Age now: {0}", age);
             Console.WriteLine("Age after 10 years: {0}", newAge);
@@ -28,7 +28,7 @@ class AgeAfterTenYears
         
         else
         {
-            byte age = (byte)(today.Year - yourBirthday.Year - 1);
+            byte age = (byte)(today.Year - yourBirthdate.Year - 1);
             byte newAge = (byte)(age + 10);
             Console.WriteLine("Age now: {0}", age);
             Console.WriteLine("Age after 10 years: {0}", newAge);
