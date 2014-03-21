@@ -182,6 +182,13 @@ class FallingRocksGame
                     (newRockMod.x2 == userDwarf.x - 1 || newRockMod.x2 == userDwarf.x || newRockMod.x2 == userDwarf.x + 1) ||
                     (newRockMod.x3 == userDwarf.x - 1 || newRockMod.x3 == userDwarf.x || newRockMod.x3 == userDwarf.x + 1)))
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.SetCursorPosition(userDwarf.x - 1, Console.WindowHeight - 1);
+                    Console.Write('X');
+                    Console.SetCursorPosition(userDwarf.x, Console.WindowHeight - 1);
+                    Console.Write('X');
+                    Console.SetCursorPosition(userDwarf.x + 1, Console.WindowHeight - 1);
+                    Console.Write('X');
                     livesCount--;
                 }
 
