@@ -135,10 +135,9 @@ class FallingRocksGame
             rocks.Add(newRock);
 
             // Check if a key is pressed and move player
-            if (Console.KeyAvailable)
+            while (Console.KeyAvailable)
             {
                 ConsoleKeyInfo pressedKey = Console.ReadKey(true);
-                while (Console.KeyAvailable) Console.ReadKey(true);
                 if (pressedKey.Key == ConsoleKey.LeftArrow)
                 {
                     if (userDwarf.x - 1 > 0)
