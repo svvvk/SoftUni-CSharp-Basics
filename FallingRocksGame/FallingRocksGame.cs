@@ -88,11 +88,22 @@ class FallingRocksGame
             // Set game speed
             Thread.Sleep(sleep + 50);
 
-            // Generate random rock position, symbol and the count of the symbol
+            // Rocks colors
+            ConsoleColor color1 = ConsoleColor.DarkGreen;
+            ConsoleColor color2 = ConsoleColor.DarkCyan;
+            ConsoleColor color3 = ConsoleColor.DarkYellow;
+            ConsoleColor color4 = ConsoleColor.Red;
+            ConsoleColor color5 = ConsoleColor.Black;
+
+            // Generate random rock position, color, symbol and the count of the symbol
+            ConsoleColor[] rockColors = new ConsoleColor[5]{
+                color1, color2, color3, color4, color5
+            };
+
             int rockNum = randomGenerator.Next(1, 4);
             char rockSymbol = rocksArr[randomGenerator.Next(0, rocksArr.Length)];
             Rock newRock = new Rock();
-            newRock.color = ConsoleColor.Red;
+            newRock.color = rockColors[randomGenerator.Next(0, 5)];
             newRock.x1 = randomGenerator.Next(0, playFieldWidth - 2);
             newRock.y = 0;
             newRock.symbolArr = new char[rockNum];
