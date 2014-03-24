@@ -287,7 +287,6 @@ class NumberAsWord
                         numTillTwenty = numsTillTwenty[9];
                         break;
                     default:
-                        numTillTwenty = "One";
                         break;
                 }
             }
