@@ -21,6 +21,7 @@ class ZeroSubset
         
         Console.Write("Enter a number e: ");
         float e = float.Parse(Console.ReadLine());
+        
         bool noZeroSubsets = true;
 
         if (a + b == 0)

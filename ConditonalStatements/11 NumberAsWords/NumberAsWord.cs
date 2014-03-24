@@ -13,8 +13,8 @@ class NumberAsWord
         string ten = null;
         string numTillTwenty = null;
         
-        string[] numsTillTwenty = new string[19]{
-            "One", "Two", "Three",
+        string[] numsTillTwenty = new string[20]{
+            "Zero", "One", "Two", "Three",
             "Four", "Five", "Six", "Seven",
             "Eight", "Nine", "Ten", "Eleven",
             "Twelve", "Thirteen", "Fourteen",
@@ -74,35 +74,37 @@ class NumberAsWord
                 case '1':
                     switch (numberAsStr[2])
 	                {
-                        case '1':
+                        case '0':
                             numTillTwenty = numsTillTwenty[10];
                             break;
-                        case '2':
+                        case '1':
                             numTillTwenty = numsTillTwenty[11];
                             break;
-                        case '3':
+                        case '2':
                             numTillTwenty = numsTillTwenty[12];
                             break;
-                        case '4':
+                        case '3':
                             numTillTwenty = numsTillTwenty[13];
                             break;
-                        case '5':
+                        case '4':
                             numTillTwenty = numsTillTwenty[14];
                             break;
-                        case '6':
+                        case '5':
                             numTillTwenty = numsTillTwenty[15];
                             break;
-                        case '7':
+                        case '6':
                             numTillTwenty = numsTillTwenty[16];
                             break;
-                        case '8':
+                        case '7':
                             numTillTwenty = numsTillTwenty[17];
                             break;
-                        case '9':
+                        case '8':
                             numTillTwenty = numsTillTwenty[18];
                             break;
+                        case '9':
+                            numTillTwenty = numsTillTwenty[19];
+                            break;
 		                default:
-                            numTillTwenty = numsTillTwenty[9];
                             break;
 	                };
                     break;
@@ -141,36 +143,45 @@ class NumberAsWord
                     case '0':
                         numTillTwenty = null;
                         break;
-                    case '2':
+                    case '1':
                         numTillTwenty = numsTillTwenty[1];
                         break;
-                    case '3':
+                    case '2':
                         numTillTwenty = numsTillTwenty[2];
                         break;
-                    case '4':
+                    case '3':
                         numTillTwenty = numsTillTwenty[3];
                         break;
-                    case '5':
+                    case '4':
                         numTillTwenty = numsTillTwenty[4];
                         break;
-                    case '6':
+                    case '5':
                         numTillTwenty = numsTillTwenty[5];
                         break;
-                    case '7':
+                    case '6':
                         numTillTwenty = numsTillTwenty[6];
                         break;
-                    case '8':
+                    case '7':
                         numTillTwenty = numsTillTwenty[7];
                         break;
-                    case '9':
+                    case '8':
                         numTillTwenty = numsTillTwenty[8];
                         break;
+                    case '9':
+                        numTillTwenty = numsTillTwenty[9];
+                        break;
                     default:
-                        numTillTwenty = "One";
                         break;
                 }
             }
-            Console.WriteLine(hundret + " " + ten + " " + numTillTwenty);
+            if (ten == null)
+            {
+                Console.WriteLine(hundret + " " + numTillTwenty);
+            }
+            else
+            {
+                Console.WriteLine(hundret + " " + ten + " " + numTillTwenty);
+            }
         }
         else if (number / 10 != 0)
         {
@@ -179,35 +190,37 @@ class NumberAsWord
                 case '1':
                     switch (numberAsStr[1])
                     {
-                        case '1':
+                        case '0':
                             numTillTwenty = numsTillTwenty[10];
                             break;
-                        case '2':
+                        case '1':
                             numTillTwenty = numsTillTwenty[11];
                             break;
-                        case '3':
+                        case '2':
                             numTillTwenty = numsTillTwenty[12];
                             break;
-                        case '4':
+                        case '3':
                             numTillTwenty = numsTillTwenty[13];
                             break;
-                        case '5':
+                        case '4':
                             numTillTwenty = numsTillTwenty[14];
                             break;
-                        case '6':
+                        case '5':
                             numTillTwenty = numsTillTwenty[15];
                             break;
-                        case '7':
+                        case '6':
                             numTillTwenty = numsTillTwenty[16];
                             break;
-                        case '8':
+                        case '7':
                             numTillTwenty = numsTillTwenty[17];
                             break;
-                        case '9':
+                        case '8':
                             numTillTwenty = numsTillTwenty[18];
                             break;
+                        case '9':
+                            numTillTwenty = numsTillTwenty[19];
+                            break;
                         default:
-                            numTillTwenty = numsTillTwenty[9];
                             break;
                     };
                     break;
@@ -246,36 +259,46 @@ class NumberAsWord
                     case '0':
                         numTillTwenty = null;
                         break;
-                    case '2':
+                    case '1':
                         numTillTwenty = numsTillTwenty[1];
                         break;
-                    case '3':
+                    case '2':
                         numTillTwenty = numsTillTwenty[2];
                         break;
-                    case '4':
+                    case '3':
                         numTillTwenty = numsTillTwenty[3];
                         break;
-                    case '5':
+                    case '4':
                         numTillTwenty = numsTillTwenty[4];
                         break;
-                    case '6':
+                    case '5':
                         numTillTwenty = numsTillTwenty[5];
                         break;
-                    case '7':
+                    case '6':
                         numTillTwenty = numsTillTwenty[6];
                         break;
-                    case '8':
+                    case '7':
                         numTillTwenty = numsTillTwenty[7];
                         break;
-                    case '9':
+                    case '8':
                         numTillTwenty = numsTillTwenty[8];
+                        break;
+                    case '9':
+                        numTillTwenty = numsTillTwenty[9];
                         break;
                     default:
                         numTillTwenty = "One";
                         break;
                 }
             }
-            Console.WriteLine(ten + " " + numTillTwenty);
+            if (ten == null)
+            {
+                Console.WriteLine(numTillTwenty);
+            }
+            else
+            {
+                Console.WriteLine(ten + " " + numTillTwenty);
+            }
         }
         else
         {
@@ -284,32 +307,34 @@ class NumberAsWord
                 case '0':
                     numTillTwenty = "Zero";
                     break;
-                case '2':
+                case '1':
                     numTillTwenty = numsTillTwenty[1];
                     break;
-                case '3':
+                case '2':
                     numTillTwenty = numsTillTwenty[2];
                     break;
-                case '4':
+                case '3':
                     numTillTwenty = numsTillTwenty[3];
                     break;
-                case '5':
+                case '4':
                     numTillTwenty = numsTillTwenty[4];
                     break;
-                case '6':
+                case '5':
                     numTillTwenty = numsTillTwenty[5];
                     break;
-                case '7':
+                case '6':
                     numTillTwenty = numsTillTwenty[6];
                     break;
-                case '8':
+                case '7':
                     numTillTwenty = numsTillTwenty[7];
                     break;
-                case '9':
+                case '8':
                     numTillTwenty = numsTillTwenty[8];
                     break;
+                case '9':
+                    numTillTwenty = numsTillTwenty[9];
+                    break;
                 default:
-                    numTillTwenty = "One";
                     break;
             }
             Console.WriteLine(numTillTwenty);
