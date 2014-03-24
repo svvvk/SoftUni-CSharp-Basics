@@ -305,7 +305,7 @@ class NumberAsWord
             switch (numberAsStr[0])
             {
                 case '0':
-                    numTillTwenty = "Zero";
+                    numTillTwenty = numsTillTwenty[0];
                     break;
                 case '1':
                     numTillTwenty = numsTillTwenty[1];
