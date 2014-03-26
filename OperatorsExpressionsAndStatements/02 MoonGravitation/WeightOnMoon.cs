@@ -9,7 +9,7 @@ class WeightOnMoon
     {
         Console.Write("Enter your weight: ");
         float weightOnEarth = float.Parse(Console.ReadLine());
-        float weightOnMoon = weightOnEarth * 17 / 100;
+        float weightOnMoon = weightOnEarth * 0.17f;
 
         Console.WriteLine("You weight {0} kilos on the moon", weightOnMoon);
     }
