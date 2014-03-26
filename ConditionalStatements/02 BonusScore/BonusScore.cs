@@ -11,7 +11,7 @@ class BonusScore
 {
     static void Main(string[] args)
     {
-        Console.Write("Enter a num in the range [1..9]");
+        Console.Write("Enter a num in the range [1..9]: ");
         sbyte num = sbyte.Parse(Console.ReadLine());
 
         switch (num)

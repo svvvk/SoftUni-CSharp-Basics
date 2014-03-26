@@ -7,7 +7,7 @@ class DigitAsWord
 {
     static void Main(string[] args)
     {
-        Console.Write("Enter a digit in the range [0..9]");
+        Console.Write("Enter a digit in the range [0..9]: ");
         string num = Console.ReadLine();
 
         switch (num)
